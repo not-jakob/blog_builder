@@ -1,10 +1,13 @@
+> [!NOTE]
+> You need to have access to the jai compiler in order to use this program.
+
 # BlogBuilder
 
 This is a simple ~400 line program that puts different html snippets together to build a blog.
 
 ## Folder structure:
 The program expects an `in` folder and will create an `out` folder where the final blog will be placed. 
-In general every folder in `in` will be copied to the `out` folder. However, there are some special folders and files inside `in` that the program will look for:
+In general, every folder in `in` will be copied to the `out` folder. However, there are some special folders and files inside `in` that the program will look for:
 
 ### Root Folder
 In the root folder you can create any files that you want to be at the root of your website, like a homepage for example. Together
@@ -18,7 +21,6 @@ When running the program any file in the `root` folder will be put in the `out` 
 In `vars.txt` file you can define variables like this (one variable on every new line):
 ```
 VARIAVLE_NAME=value
-
 ```
 
 Any time you put `%VARIABLE_NAME%` now in any html file it will be replaced with the value defined.
@@ -27,7 +29,7 @@ Any time you put `%VARIABLE_NAME%` now in any html file it will be replaced with
 In the `list` folder you can define ...lists. To make a new list, make a new folder there and create a `list.html` file.
 At the beginning of the list file you have to define two variables: `LIST_VAR` and `LIST_TITLE`:
 ```
-LIST_VAR=MARVEL_MOVIES
+LIST_VAR=MARVEL_MOVIE
 LIST_TITLE=My top 5 Marvel Movies
 ```
 
@@ -45,7 +47,7 @@ ITEM_DATE=01/01/2000
 ```
 
 The `ITEM_TITLE` will be the item title.
-The `ITEM_DATE` is optional and when present items with an more recent date will appear first in the list.
+The `ITEM_DATE` is optional and when present, items with an more recent date will appear first in the list.
 
 You can also define additional variables that can be called from `list.html`.
 
