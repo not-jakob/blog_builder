@@ -1,7 +1,7 @@
 > [!NOTE]
 > You need to have access to the jai compiler in order to use this program.
 
-# BlogBuilder
+# blog_builder
 
 This is a simple ~400 line program that puts different html snippets together to build a blog.
 
