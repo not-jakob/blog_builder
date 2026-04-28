@@ -1,7 +1,7 @@
 > [!NOTE]
 > You need to have access to the jai compiler in order to use this program.
 
-# blog_builder
+# BLog Builder
 
 This is a simple ~400 line program that puts different html snippets together to build a blog.
 
@@ -58,6 +58,6 @@ You will have to define a `LINKS_VAR` variable. It works like the `LIST_VAR` var
 The `in` folder already contains an example blog with a list of the top 5 marvel movies. 
 If you don't like marvel movies check out https://neinkob.net.
 
-## How to run blog_builder
+## How to run Blog Builder
 You need to have access to the jai beta in order to use this program since it has to be compiled first. 
 Run `jai blog_builder.jai` and then run `./blog_builder.
