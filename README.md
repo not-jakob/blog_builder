@@ -12,7 +12,7 @@ with the template folder it forms the core of your blog.
 
 ### Template Folder
 In the `templates` folder you will find a `head.html`, `header.html` and `footer.html` file.
-When running the program any file in the `root` folder will be put in the `out` folder and head, header and footer will be applied to any of them.
+When running the program any file in the `root` folder will be put in the `out` folder and head, header and footer will be applied to all of them.
 
 ### Variable file
 In `vars.txt` file you can define variables like this (one variable on every new line):
@@ -31,13 +31,13 @@ LIST_VAR=MARVEL_MOVIES
 LIST_TITLE=My top 5 Marvel Movies
 ```
 
-With `LIST_VAR` the whole list will be copy-pasted into a html file when writing `%MARVEL_MOVIES%`.
+With `LIST_VAR` the whole list will be copy-pasted into a html file when calling `%MARVEL_MOVIES%`.
 `LIST_TITLE` will define the heading of the list.
 
-The content actual content of the file is separated by `+++` and acts as a template for each list item.
+The actual content of the file is separated by `+++` and acts as a template for each list item.
 With `%ITEM_CONTENT%` you can say where the content of each item will be placed.
 
-Every html file that sits in the list folder will be included as a item in the final list. 
+Every html file that sits in the list folder will be included as an item in the final list. 
 On the top of every item file you have to define:
 ```
 ITEM_TITLE=The Avengers
@@ -50,8 +50,8 @@ The `ITEM_DATE` is optional and when present items with an more recent date will
 You can also define additional variables that can be called from `list.html`.
 
 In addition to the `list.html` file you can also create a `links.html` file. This template file will be used to compile a list of links for every item in a list.
-You will have to define a `LINKS_VAR` variable that works like the `LIST_VAR` variable.
+You will have to define a `LINKS_VAR` variable. It works like the `LIST_VAR` variable.
 
 ## How to run BlogBulder
 You need to have access to the jai beta in order to use this program since it has to be compiled first. 
-Run `jai blog_builder.jai` and then run `./blog_builder`.# blog_builder
+Run `jai blog_builder.jai` and then run `./blog_builder.
