@@ -18,7 +18,7 @@ In the `templates` folder you will find a `head.html`, `header.html` and `footer
 When running the program any file in the `root` folder will be put in the `out` folder and head, header and footer will be applied to all of them.
 
 ### Variable file
-In `vars.txt` file you can define variables like this (one variable on every new line):
+In `vars.txt` you can define variables like this (one variable on every new line):
 ```
 VARIAVLE_NAME=value
 ```
@@ -53,6 +53,10 @@ You can also define additional variables that can be called from `list.html`.
 
 In addition to the `list.html` file you can also create a `links.html` file. This template file will be used to compile a list of links for every item in a list.
 You will have to define a `LINKS_VAR` variable. It works like the `LIST_VAR` variable.
+
+## Examples
+The `in` folder already contains an example blog with a list of the top 5 marvel movies. 
+If you don't like marvel movies check out https://neinkob.net.
 
 ## How to run BlogBulder
 You need to have access to the jai beta in order to use this program since it has to be compiled first. 
