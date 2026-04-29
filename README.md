@@ -10,12 +10,12 @@ The program expects an `in` folder and will create an `out` folder where the fin
 In general, every folder in `in` will be copied to the `out` folder. However, there are some special folders and files inside `in` that the program will look for:
 
 ### Root Folder
-In the root folder you can create any files that you want to be at the root of your website, like a homepage for example. Together
+In the root folder you can create files that you want to be at the root of your website, like a homepage for example. Together
 with the template folder it forms the core of your blog.
 
 ### Template Folder
 In the `templates` folder you will find a `head.html`, `header.html` and `footer.html` file.
-When running the program any file in the `root` folder will be put in the `out` folder and head, header and footer will be applied to all of them.
+When running the program all files in the `root` folder will be copied into the `out` folder and head, header and footer will be applied to all of them.
 
 ### Variable file
 In `vars.txt` you can define variables like this (one variable on every new line):
@@ -51,7 +51,7 @@ The `ITEM_DATE` is optional and when present, items with an more recent date wil
 
 You can also define additional variables that can be called from `list.html`.
 
-In addition to the `list.html` file you can also create a `links.html` file. This template file will be used to compile a list of links for every item in a list.
+Besides the `list.html` file you can also create a `links.html` file. This template file will be used to compile a list of links for every item in a list.
 You will have to define a `LINKS_VAR` variable. It works like the `LIST_VAR` variable.
 
 ## Examples
@@ -59,5 +59,5 @@ The `in` folder already contains an example blog with a list of the top 5 marvel
 If you don't like marvel movies check out https://neinkob.net.
 
 ## How to run Blog Builder
-You need to have access to the jai beta in order to use this program since it has to be compiled first. 
+You need to have access to the jai beta in order to use this program since it has to be compiled first. Sorry.
 Run `jai blog_builder.jai` and then run `./blog_builder.
