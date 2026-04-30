@@ -7,7 +7,7 @@ This is a simple ~400 line program that puts different html snippets together to
 
 ## Folder structure:
 The program expects an `in` folder and will create an `out` folder where the final blog will be placed. 
-In general, every folder in `in` will be copied to the `out` folder. However, there are some special folders and files inside `in` that the program will look for:
+In general, every file and folder in `in` will be copied to the `out` folder. However, there are some special folders and files inside `in` that the program will look for:
 
 ### Root Folder
 In the root folder you can create files that you want to be at the root of your website, like a homepage for example. Together
@@ -59,6 +59,6 @@ The `in` folder already contains an example blog with a list of the top 5 marvel
 If you don't like marvel movies check out https://neinkob.net.
 
 ## How to run Blog Builder
-You need to have access to the jai beta in order to use this program since it has to be compiled first. Sorry.
+You need to have access to the jai beta in order to use this program since it has to be compiled first.
 
 Run `jai blog_builder.jai` and then run `./blog_builder.
