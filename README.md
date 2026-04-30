@@ -47,12 +47,12 @@ ITEM_DATE=01/01/2000
 ```
 
 The `ITEM_TITLE` will be the item title.
-The `ITEM_DATE` is optional and when present, items with an more recent date will appear first in the list.
+The `ITEM_DATE` is optional and when present, items with a more recent date will appear first in the list.
 
 You can also define additional variables that can be called from `list.html`.
 
 Besides the `list.html` file you can also create a `links.html` file. This template file will be used to compile a list of links for every item in a list.
-You will have to define a `LINKS_VAR` variable. It works like the `LIST_VAR` variable.
+You will have to define a `LINKS_VAR` variable. It works like the `LIST_VAR` variable. To get the link of an item use `%ITEM_LINK%`.
 
 ## Examples
 The `in` folder already contains an example blog with a list of the top 5 marvel movies. 

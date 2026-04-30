@@ -119,7 +119,6 @@ main :: () {
         for file_names {
             if ends_with(it ,"/list.html") continue;
             if ends_with(it ,"/links.html") continue;
-            if ends_with(it ,"/single_page.html") continue;
 
             list_item_string := read_entire_file(it);
 
@@ -175,9 +174,6 @@ main :: () {
         if found_links_file {
             generate_var_from_list(sorted_links, links_name);
         }        
-
-        // single_page_file := tprint("%1/%2", directory_name, "single_page.html");
-        // found_single_page_file = file_exists(single_page_file);
 
         for sorted_list {
             file_path := tprint("%1/%2", output_path, it.file_name);
