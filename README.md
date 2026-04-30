@@ -61,4 +61,4 @@ If you don't like marvel movies check out https://neinkob.net.
 ## How to run Blog Builder
 You need to have access to the jai beta in order to use this program since it has to be compiled first.
 
-Run `jai blog_builder.jai` and then run `./blog_builder.
+Run `jai blog_builder.jai` and then run `./blog_builder`.
