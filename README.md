@@ -11,7 +11,6 @@ In general, every file and folder in `in` will be copied to the `out` folder. Ho
 
 ### Root Folder
 In the root folder you can create files that you want to be at the root of your website, like a homepage for example. Together
-with the template folder it forms the core of your blog.
 
 ### Template Folder
 In the `templates` folder you will find a `head.html`, `header.html` and `footer.html` file.
@@ -23,7 +22,7 @@ In `vars.txt` you can define variables like this (one variable on every new line
 VARIAVLE_NAME=value
 ```
 
-Any time you put `%VARIABLE_NAME%` now in any html file it will be replaced with the value defined.
+Now anytime you put `%VARIABLE_NAME%` in any html file it will be replaced with the value defined.
 
 ### Lists Folder
 In the `list` folder you can define ...lists. To make a new list, make a new folder there and create a `list.html` file.
@@ -34,7 +33,7 @@ LIST_TITLE=My top 5 Marvel Movies
 ```
 
 With `LIST_VAR` the whole list will be copy-pasted into a html file when calling `%MARVEL_MOVIES%`.
-`LIST_TITLE` will define the heading of the list.
+You will have to give a `LIST_TITLE` but you can use it anyway you like.
 
 The actual content of the file is separated by `+++` and acts as a template for each list item.
 With `%ITEM_CONTENT%` you can say where the content of each item will be placed.
@@ -51,12 +50,12 @@ The `ITEM_DATE` is optional and when present, items with a more recent date will
 
 You can also define additional variables that can be called from `list.html`.
 
-Besides the `list.html` file you can also create a `links.html` file. This template file will be used to compile a list of links for every item in a list.
+Besides the `list.html` file you can create a `links.html` file. This template file will be used to compile a list of links for every item in a list.
 You will have to define a `LINKS_VAR` variable. It works like the `LIST_VAR` variable. To get the link of an item use `%ITEM_LINK%`.
 
 ## Examples
 The `in` folder already contains an example blog with a list of the top 5 marvel movies. 
-If you don't like marvel movies check out https://neinkob.net.
+If you don't like marvel movies check out [neinkob.net](https://neinkob.net).
 
 ## How to run Blog Builder
 You need to have access to the jai beta in order to use this program since it has to be compiled first.
