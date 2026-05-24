@@ -1,16 +1,16 @@
 > [!NOTE]
-> You need to have access to the jai compiler in order to use this program.
+> You need access to the jai compiler in order to use this program.
 
 # Blog Builder
 
-This is a simple ~400 line program that puts different html snippets together to build a blog.
+This is a simple ~400 line program that assembles different html snippets together to build a blog.
 
 ## Folder structure:
 The program expects an `in` folder and will create an `out` folder where the final blog will be placed. 
 In general, every file and folder in `in` will be copied to the `out` folder. However, there are some special folders and files inside `in` that the program will look for:
 
 ### Root Folder
-In the root folder you can create files that you want to be at the root of your website, like a homepage for example. Together
+In the root folder you can create files that you want to be at the root of your website, like a homepage for example. These files will be processed with the templates described below.
 
 ### Template Folder
 In the `templates` folder you will find a `head.html`, `header.html` and `footer.html` file.
@@ -26,20 +26,20 @@ Now anytime you put `%VARIABLE_NAME%` in any html file it will be replaced with 
 
 ### Lists Folder
 In the `list` folder you can define ...lists. To make a new list, make a new folder there and create a `list.html` file.
-At the beginning of the list file you have to define two variables: `LIST_VAR` and `LIST_TITLE`:
+At the beginning of the list file you must define two variables: `LIST_VAR` and `LIST_TITLE`:
 ```
 LIST_VAR=MARVEL_MOVIE
 LIST_TITLE=My top 5 Marvel Movies
 ```
 
-With `LIST_VAR` the whole list will be copy-pasted into a html file when calling `%MARVEL_MOVIES%`.
-You will have to give a `LIST_TITLE` but you can use it anyway you like.
+With `LIST_VAR` the whole list will be copy-pasted when calling `%MARVEL_MOVIES%`.
+You must give a `LIST_TITLE` variable definition.
 
 The actual content of the file is separated by `+++` and acts as a template for each list item.
 With `%ITEM_CONTENT%` you can say where the content of each item will be placed.
 
 Every html file that sits in the list folder will be included as an item in the final list. 
-On the top of every item file you have to define:
+On the top of every item file you must define:
 ```
 ITEM_TITLE=The Avengers
 ITEM_DATE=01/01/2000
@@ -54,10 +54,10 @@ Besides the `list.html` file you can create a `links.html` file. This template f
 You will have to define a `LINKS_VAR` variable. It works like the `LIST_VAR` variable. To get the link of an item use `%ITEM_LINK%`.
 
 ## Examples
-The `in` folder already contains an example blog with a list of the top 5 marvel movies. 
-If you don't like marvel movies check out [neinkob.net](https://neinkob.net).
+The `in` folder already contains an example blog with a list of the top 5 Marvel movies. 
+If you don't like Marvel movies check out [neinkob.net](https://neinkob.net).
 
 ## How to run Blog Builder
-You need to have access to the jai beta in order to use this program since it has to be compiled first.
+You need access to the Jai beta in order to use this program since it has to be compiled first.
 
 Run `jai blog_builder.jai` and then run `./blog_builder`.
