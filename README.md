@@ -1,5 +1,5 @@
 > [!NOTE]
-> You need access to the jai compiler in order to use this program.
+> You need access to the Jai compiler in order to use this program.
 
 # Blog Builder
 
