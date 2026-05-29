@@ -7,7 +7,7 @@ This is a simple ~400 line program that assembles different html snippets togeth
 
 ## Folder structure:
 The program expects an `in` folder and will create an `out` folder where the final blog will be placed. 
-In general, every file and folder in `in` will be copied to the `out` folder. However, there are some special folders and files inside `in` that the program will look for:
+In general, every file and folder in `in` will be copied to the `out` folder. However, there are some special folders and files inside `in` that the program will look for.
 
 ### Root Folder
 In the root folder you can create files that you want to be at the root of your website, like a homepage for example. These files will be processed with the templates described below.
@@ -25,8 +25,8 @@ VARIAVLE_NAME=value
 Now anytime you put `%VARIABLE_NAME%` in any html file it will be replaced with the value defined.
 
 ### Lists Folder
-In the `list` folder you can define ...lists. To make a new list, make a new folder there and create a `list.html` file.
-At the beginning of the list file you must define two variables: `LIST_VAR` and `LIST_TITLE`:
+To make a new list, make a new folder in the `list` folder and create a `list.html` file.
+At the beginning of the `list.html` file you must define two variables: `LIST_VAR` and `LIST_TITLE`:
 ```
 LIST_VAR=MARVEL_MOVIE
 LIST_TITLE=My top 5 Marvel Movies
@@ -51,7 +51,7 @@ The `ITEM_DATE` is optional and when present, items with a more recent date will
 You can also define additional variables that can be called from `list.html`.
 
 Besides the `list.html` file you can create a `links.html` file. This template file will be used to compile a list of links for every item in a list.
-You will have to define a `LINKS_VAR` variable. It works like the `LIST_VAR` variable. To get the link of an item use `%ITEM_LINK%`.
+You will have to define a `LINKS_VAR` variable that works like the `LIST_VAR` variable. To get the link of an item use `%ITEM_LINK%`.
 
 ## Examples
 The `in` folder already contains an example blog with a list of the top 5 Marvel movies. 
