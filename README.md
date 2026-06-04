@@ -57,6 +57,10 @@ You will have to define a `LINKS_VAR` variable that works like the `LIST_VAR` va
 The `in` folder already contains an example blog with a list of the top 5 Marvel movies. 
 If you don't like Marvel movies check out [neinkob.net](https://neinkob.net).
 
+## Why is the html formatting messed up after generating the blog?
+I don't do any formatting for the generated html code.
+If you want to have more readable html code, i would recommomend running a formatter like [superHTML](https://github.com/kristoff-it/superhtml) after each build.
+
 ## How to run Blog Builder
 You need access to the Jai beta in order to use this program since it has to be compiled first.
 
